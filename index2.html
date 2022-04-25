@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Hand Gesture WebApp</title>
+    <link rel="icon"
+        href="https://mpng.subpng.com/20191109/rwc/transparent-hand-finger-logo-line-gesture-5dc6d38cdbbe16.8239078515733113729001.jpg">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <center>
+            <h3 class="btn btn-info heading">Hand Gesture
+            <br>
+            <span>👍</span>
+            <span>👌</span>
+            <span>✌</span>
+          </h3>
+          <p>Other hand gesture will be updated soon!</p>
+      
+      
+            <br><br>
+      
+            <p style="font-size: 22px;">Take a picture of your hand gesture
+                <br>
+              <b style="color: rgb(81, 255, 0)">Are you trying to show Best?</b>
+              <br>
+              <b style="color: rgb(43, 0, 255)">Are you trying to show Super?</b>
+              <br>
+              <b style="color: rgb(238, 255, 0)">Are you trying to show Victory?</b>
+              <br>
+            </p>
+      
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <label>Webcam View - </label>
+              <div id="webcam"></div>
+              <br>
+              <br>
+              <button class="btn btn-warning" onclick="captureImage()">Capture image</button>
+            </div>
+      
+            <div class="col-md-4 col-sm-12 col-xs-12">
+      
+              <label>Result 1: </label>
+              <p class="emotion_name" id="resultEmotionName1"></p>
+              <p class="emoji" id="update_emoji_1"></p>
+      
+              <label>Result 2: </label>
+              <p class="emotion_name" id="resultEmotionName2"></p>
+              <p class="emoji" id="update_emoji_2"></p>
+            </div>
+      
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Snapshot - </label>
+              <div id="output"></div>
+              <br>
+              <br>
+              <button class="btn btn-success" onclick="PredictImage()">Predict Emotion</button>
+              <br><br>
+      
+            </div>
+            <br>
+            <br>
+            <br>
+            <h2><b>Developed by:Technological Power</b></h2>
+            <a href="https://technological5.web.app"><button class="btn btn-success" style="font-size: 20px;">Visit Website</button></a>
+            <br>
+            <br>
+      
+          </center>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
