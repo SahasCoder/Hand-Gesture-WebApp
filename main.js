@@ -44,7 +44,7 @@ function gotResult(error , results){
     else{
         console.log(results);
         document.getElementById("resultEmotionName1").innerHTML=results[0].label;
-        document.getElementById("resultEmotionName2").innerHTML=results[0].label;
+        document.getElementById("resultEmotionName2").innerHTML=results[1].label;
         result_1 = results[0].label;
         result_2 = results[1].label;
         speak();
